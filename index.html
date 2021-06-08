@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Sidebar</title>
+</head>
+<body>
+  <div class="sidebar">
+    <header class="sidebar-header">
+      <i class="icon-menu" id="burgerButton"></i>
+      <div class="header-title" id="logo">
+        <a href="/">
+          <img src="images/logo.png" alt="">
+          <p href="/">No te rindas</p>
+        </a>
+      </div>
+    </header>
+    <div class="flexbox active" id="flexbox1">
+      <i class="icon-archive"></i>
+      <p class="texto" id="txt1">Recibidos</p>
+    </div>
+    <div class="flexbox" id="flexbox2">
+      <i class="icon-star"></i>
+      <p class="texto" id="txt2">Destacados</p>
+    </div>
+    <div class="flexbox" id="flexbox3">
+      <i class="icon-clock"></i>
+      <p class="texto" id="txt3">Pospuestos</p>
+    </div>
+    <div class="flexbox" id="flexbox4">
+      <i class="icon-send"></i>
+      <p class="texto" id="txt4">Enviados</p>
+    </div>
+    <h2 class="subTitle">
+      categorías
+    </h2>
+    <div class="flexbox" id="flexbox5">
+      <i class="icon-mail"></i>
+      <p class="texto" id="txt5">Todos</p>
+    </div>
+    <div class="flexbox" id="flexbox6">
+      <i class="icon-trash"></i>
+      <p class="texto" id="txt6">Papelera</p>
+    </div>
+  </div>
+  <script src="sidebar.js" type="module"></script>
+</body>
+</html>

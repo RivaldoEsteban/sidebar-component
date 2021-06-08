@@ -1,0 +1,76 @@
+@import "./icons.css";
+
+body {
+  background-color: rgb(55, 55, 238);
+  margin: 0;
+}
+
+.sidebar {
+  background: white;
+  block-size: 100vh;
+  inline-size: 15.5rem;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar > * {
+  height: 56px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-title a {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-title a {
+  font: 700 normal 1rem/1.5rem arial;
+  text-decoration: none;
+  color: black;
+}
+
+.flexbox {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0.5;
+}
+
+.active {
+  background: #c5dcfa;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  color: #0f56b3;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.flexbox p {
+  margin: 0;
+  font: 700 normal 1rem/1.5rem arial;
+}
+
+i {
+  margin-left: 20px;
+}
+
+.subTitle {
+  font: 800 normal 0.8rem/1rem arial;
+  margin-left: 20px;
+  text-transform: uppercase;
+  margin: 0 20px;
+  height: 20px;
+}
+
+#burgerButton {
+  cursor: pointer;
+}
