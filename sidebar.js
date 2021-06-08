@@ -62,6 +62,7 @@ const txt6 = document.getElementById("txt6");
 const subtitle = document.querySelector(".subTitle");
 
 const burgerButton = document.getElementById("burgerButton");
+const sidebar = document.querySelector(".sidebar");
 
 burgerButton.addEventListener("click", sidebarHide);
 
@@ -74,19 +75,20 @@ function sidebarHide() {
   txt5.style.display = "none";
   txt6.style.display = "none";
   subtitle.style.display = "none";
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.width = "64px";
+
+  sidebar.style.width = "64px ";
 }
 
 function sidebarShow() {
-  logo.style.display = "block";
-  txt1.style.display = "block";
-  txt2.style.display = "block";
-  txt3.style.display = "block";
-  txt4.style.display = "block";
-  txt5.style.display = "block";
-  txt6.style.display = "block";
-  subtitle.style.display = "block";
-  const sidebar = document.querySelector(".sidebar");
+  setTimeout(() => {
+    logo.style.display = "block";
+    txt1.style.display = "block";
+    txt2.style.display = "block";
+    txt3.style.display = "block";
+    txt4.style.display = "block";
+    txt5.style.display = "block";
+    txt6.style.display = "block";
+    subtitle.style.display = "block";
+  }, 300);
   sidebar.style.width = "248px";
 }
