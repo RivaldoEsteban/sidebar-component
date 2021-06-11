@@ -24,31 +24,25 @@ function remove() {
 function selectedBox1() {
   remove();
   flexbox1.classList.add("active");
-  sidebarShow();
 }
 function selectedBox2() {
   remove();
   flexbox2.classList.add("active");
-  sidebarShow();
 }
 function selectedBox3() {
   remove();
   flexbox3.classList.add("active");
-  sidebarShow();
 }
 function selectedBox4() {
   remove();
-  sidebarShow();
   flexbox4.classList.add("active");
 }
 function selectedBox5() {
   remove();
-  sidebarShow();
   flexbox5.classList.add("active");
 }
 function selectedBox6() {
   remove();
-  sidebarShow();
   flexbox6.classList.add("active");
 }
 
@@ -66,7 +60,18 @@ const sidebar = document.querySelector(".sidebar");
 
 burgerButton.addEventListener("click", sidebarHide);
 
+let x = 0;
 function sidebarHide() {
+  if (x == 0) {
+    ocultar();
+    x = 1;
+  } else {
+    x = 0;
+    mostar();
+  }
+}
+
+function ocultar() {
   logo.style.display = "none";
   txt1.style.display = "none";
   txt2.style.display = "none";
@@ -75,11 +80,10 @@ function sidebarHide() {
   txt5.style.display = "none";
   txt6.style.display = "none";
   subtitle.style.display = "none";
-
   sidebar.style.width = "64px ";
 }
 
-function sidebarShow() {
+function mostar() {
   setTimeout(() => {
     logo.style.display = "block";
     txt1.style.display = "block";
